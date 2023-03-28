@@ -1,0 +1,17 @@
+h1 {color: yellow; font-weight: bold; background-color: blue; text-align: center;}
+h2{color: white; background-color: red;}
+h3{color: blueviolet; background-color: black;}
+h4{color: black; background-color: aquamarine;}
+ul{color: aqua; background-color: rgba(255, 127, 80, 0.39);}
+ol{color: antiquewhite; background-color: gray;}
+li{color: pink;}
+.p1{color: rgb(255, 115, 0);}
+#caja{height: 500px; width: 400px; background-color: blue; text-align: center; margin: 50px; border:5px dashed yellow; margin-left: 500px; padding: 15px;}
+.p2{font-family: Arial, Helvetica, sans-serif; font-size: large;font-weight: bolder; color: black;}
+p{line-height: 28px;}
+.p3 {line-height: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ; color: red;}
+
+.p4{margin-left: 400px;}
+.p5{margin-left: 100px;}
+
