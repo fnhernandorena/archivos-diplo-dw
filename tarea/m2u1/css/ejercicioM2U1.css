@@ -1,0 +1,26 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Space Mono', monospace;*/
+h1 {color: yellow; font-weight: bold; background-color: blue; text-align: center; font-family: 'Dancing Script', cursive}
+h2{color: white; background-color: red;}
+h3{color: blueviolet; background-color: black;}
+h4{color: black; background-color: aquamarine;}
+ul{color: aqua; background-color: rgba(255, 127, 80, 0.39);}
+ol{color: antiquewhite; background-color: gray;}
+li{color: pink; font-family: 'Space Mono', monospace; }
+.p1{color: rgb(255, 115, 0); font-family: 'Roboto Condensed', sans-serif;column-count: 4; column-gap: 50px;}
+#caja{height: 600px; width: 400px; background: radial-gradient(circle, rgba(252,70,107,1) 24%, rgba(63,94,251,1) 61%); text-align: center; margin: 50px; border:5px dashed greenyellow; margin-left: 500px; padding: 15px;box-shadow: 156px 24px 6px 32px rgba(255,0,67,0.63);
+    -webkit-box-shadow: 156px 24px 6px 32px rgba(255,0,67,0.63);
+    -moz-box-shadow: 156px 24px 6px 32px rgba(255,0,67,0.63); }
+.p2{font-family: Arial, Helvetica, sans-serif; font-size: large;font-weight: bolder; color: black;}
+p{line-height: 28px;}
+.p3 {line-height: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ; color: red;}
+
+.p4{margin-left: 400px; border-radius: 99px 99px 99px 99px;
+    -webkit-border-radius: 99px 99px 99px 99px;
+    -moz-border-radius: 99px 99px 99px 99px;}
+.p5{margin-left: 100px; border-radius: 0px 200px 200px 200px;
+    -webkit-border-radius: 0px 200px 200px 200px;
+    -moz-border-radius: 0px 200px 200px 200px;}
+
