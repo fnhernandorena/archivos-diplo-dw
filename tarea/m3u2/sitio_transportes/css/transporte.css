@@ -1,0 +1,261 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: rgb(248, 255, 114);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(255, 65, 65);
+}
+
+nav a div {
+    height: 40px;
+    width: 150px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.activo {
+    background-color: black;
+    color: white;
+}
+
+nav a div:hover {
+    background-color: rgb(255, 65, 65);
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infohome {
+    display: flex;
+    align-items: start;
+    max-width: 960px;
+    justify-content: end;
+}
+
+.pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.bien {
+    width: 500%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.test {
+    width: auto;
+    background-color: #ccc;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cita {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.nosmenu {
+    max-width: 960px;
+}
+
+.personas {
+    background-color: rgb(151, 151, 151);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.persona {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: blanchedalmond;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*fin nos*/
+.divserv {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.princ {
+    max-width: 960px;
+}
+
+.divserv img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.fondo {
+    background-color: rgb(151, 151, 151);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.divserv h3 {
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgb(255, 65, 65);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.divserv:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.caja {
+    max-width: 560px;
+}
+
+h3 {
+    color: rgb(255, 65, 65);
+}
+
+h4 {
+    color: rgb(255, 65, 65);
+}
+
+/*inicio galeria*/
+.gal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(151, 151, 151);
+    border-radius: 5px;
+}
+
+.gal img {
+    max-width: 300px;
+}
+
+.picgal {
+    padding: 5px;
+    border: 3px solid rgb(255, 65, 65);
+    margin: 5px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+.iniciogal {
+    max-width: 980px;
+}
+
+/* inicio novedades */
+.inicnov {
+    max-width: 960px;
+}
+
+.novedad {
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.novstit {
+    background-color: rgb(151, 151, 151);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* fin novedades */
+.iniccont {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.send {
+    background-color: rgb(255, 65, 65);
+}
+
+ul {
+    font-size: x-large;
+    line-height: 60px;
+    gap: 5px;
+}
+
+.form p input,
+.form p textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form label {
+    font-weight: bolder;
+    line-height: 30px;
+}
+textarea{
+    height: 150px;
+    resize: none;
+}
