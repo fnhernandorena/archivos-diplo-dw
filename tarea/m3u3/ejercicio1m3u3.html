@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJercicio 1</title>
+</head>
+<body>
+    <script>
+        const dist = parseInt(prompt('Ingrese la distancia que quiere recorrer en metros:', ''));
+
+		if (dist >= 100000) {
+			document.write(`Lo mas conveniente es viajar en avion`);
+		} else if (dist >= 30000) {
+			document.write(`Lo mas conveniente es viajar en auto`);
+        } else if (dist >= 10000) {
+			document.write(`Lo mas conveniente es viajar en colectivo`);
+        } else if (dist >= 1000) {
+			document.write(`Lo mas conveniente es ir en bicicleta`);
+		} else {
+			document.write(`Lo mas conveniente es caminar`);
+		}
+
+    </script>
+</body>
+</html>
