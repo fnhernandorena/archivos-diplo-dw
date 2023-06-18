@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="padre">
+        <div class="red" onclick="cambiarfondo('red')"></div>
+        <div class="blue" onclick="cambiarfondo('blue')"></div>
+        <div class="green" onclick="cambiarfondo('green')"></div>
+    </div>
+    <style>
+        body {
+            height: 700px;
+        }
+
+        .padre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 300px;
+        }
+
+        .padre div {
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+
+        }
+
+        .blue {
+            background-color: blue;
+
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+    <script>
+        function cambiarfondo(color) {
+            document.querySelector('body').style.background = color;
+        }
+    </script>
+</body>
+
+</html>
