@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css'
 import Header from './components/layout/Header'
 import Nav from './components/layout/Nav'
@@ -12,7 +13,7 @@ import ContactoPage from './pages/ContactoPage'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <Header />
-   <BrowseRouter>
+   <BrowserRouter>
    <Nav />
    <Routes>
     < Route path="/" element={<HomePage/>} />
@@ -20,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     < Route path="/nosotros" element={<NosotrosPage/>} />
     < Route path="/contacto" element={<ContactoPage/>} />
    </Routes>
-   </BrowseRouter>
+   </BrowserRouter>
    <Footer />
   </React.StrictMode>, 
 )

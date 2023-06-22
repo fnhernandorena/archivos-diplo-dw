@@ -4,7 +4,7 @@ const Nav = (props) =>{
     <div><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</div>
 </Link>
 <Link to="/nosotros">
-    <div>/*<i class="fa-solid fa-user" style="padding-right: 10px;"></i>*/ Nosotros</div>
+    <div><i class="fa-solid fa-user" style="padding-right: 10px;"></i> Nosotros</div>
 </Link>
 <Link to="/novedades">
     <div><i class="fa-solid fa-bolt" style="padding-right: 10px;"></i> Novedades</div>
