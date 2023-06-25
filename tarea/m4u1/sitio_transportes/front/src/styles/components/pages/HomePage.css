@@ -1,5 +1,4 @@
-.bien {
-    width: 500%;
+.bien { width: auto;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -18,12 +17,15 @@
     padding-top: 5px;
 }
 .pic {
-    max-width: 100%;
+   max-width: 100%;
     height: auto;
 } 
 .infohome {
     display: flex;
-    align-items: start;
-    max-width: 960px;
-    justify-content: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.text{
+    display: flex;
+    flex-direction: row;
 }

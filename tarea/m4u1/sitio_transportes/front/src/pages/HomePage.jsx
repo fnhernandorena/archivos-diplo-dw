@@ -3,7 +3,7 @@ import '../styles/components/pages/homepage.css'
 const HomePage = (props) =>{
     return (
       <main className='infohome'>  <img src="./public/home/img01.jpg" alt="Viajes Internacionales" className='pic'/>
-        <div >
+        <div className='text'>
             <div className='bien'>
                 <div >
                     <h2>Bienvenidos</h2>

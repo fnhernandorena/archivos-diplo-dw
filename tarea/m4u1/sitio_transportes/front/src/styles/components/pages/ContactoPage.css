@@ -3,6 +3,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 40px;
+    flex-direction: row;
+ width: 960px;
 }
 
 .send {
