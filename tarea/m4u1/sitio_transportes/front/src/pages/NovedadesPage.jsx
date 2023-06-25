@@ -1,9 +1,10 @@
+import '../styles/components/pages/NovedadesPage.css'
 const NovedadesPage = (props) =>{
     return (
-        <div>
+        <main>
             <h2>Novedades</h2>
-            <div>
-                <div>
+            <div className='novstit'>
+                <div className='novedad'>
                     <h3>Titulo</h3>
                     <h4>Subtitulo</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
@@ -14,7 +15,7 @@ const NovedadesPage = (props) =>{
                         nesciunt
                         dolorem? Inventore?</p>
                 </div>
-                <div>
+                <div className='novedad'>
                     <h3>Titulo</h3>
                     <h4>Subtitulo</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
@@ -25,7 +26,7 @@ const NovedadesPage = (props) =>{
                         nesciunt
                         dolorem? Inventore?</p>
                 </div>
-                <div>
+                <div className='novedad'>
                     <h3>Titulo</h3>
                     <h4>Subtitulo</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
@@ -36,7 +37,7 @@ const NovedadesPage = (props) =>{
                         nesciunt
                         dolorem? Inventore?</p>
                 </div>
-                <div>
+                <div className='novedad'>
                     <h3>Titulo</h3>
                     <h4>Subtitulo</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
@@ -48,7 +49,7 @@ const NovedadesPage = (props) =>{
                         dolorem? Inventore?</p>
                 </div>
             </div>
-        </div>
+        </main>
         )
 }
 export default NovedadesPage

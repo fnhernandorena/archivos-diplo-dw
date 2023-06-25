@@ -1,0 +1,25 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+}
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(255, 65, 65);
+}
+h3 {
+    color: rgb(255, 65, 65);
+}
+
+h4 {
+    color: rgb(255, 65, 65);
+}
+main {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 960px;
+}

@@ -1,8 +1,10 @@
+import '../styles/components/pages/homepage.css'
+
 const HomePage = (props) =>{
     return (
-      <div>  <img src="./public/home/img01.jpg" alt="Viajes Internacionales" />
+      <main className='infohome'>  <img src="./public/home/img01.jpg" alt="Viajes Internacionales" className='pic'/>
         <div >
-            <div >
+            <div className='bien'>
                 <div >
                     <h2>Bienvenidos</h2>
                 </div>
@@ -19,16 +21,16 @@ const HomePage = (props) =>{
                         iusto, molestias perferendis nisi magni. Mollitia.</p>
                 </div>
             </div>
-            <div>
+            <div className='test'>
                 <div>
                     <h2>Testimonios</h2>
                 </div>
-                <div> It was the best experience in my life! </div>
+                <div className='cita'> It was the best experience in my life! </div>
                 Mark Zuckerberg
-                <div> Nunca estuve tan conforme. </div>
+                <div className='cita'> Nunca estuve tan conforme. </div>
                 Leonel Messi
             </div>
-        </div> </div>
+        </div> </main>
         );
 }
 

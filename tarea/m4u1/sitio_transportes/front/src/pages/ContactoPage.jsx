@@ -1,9 +1,10 @@
+import '../styles/components/pages/ContactoPage.css'
 const ContactoPage = (props) =>{
     return (
-        <div>
+        <main className="iniccont">
             <div>
                 <h2>Contacto rapido</h2>
-                <form action="" method="" class="form">
+                <form action="" method="" className="form">
                     <p><label for="nombre">Nombre</label>
                         <input type="text"/>
                     </p>
@@ -16,7 +17,7 @@ const ContactoPage = (props) =>{
                     <p><label for="mensaje">Mensaje</label>
                         <textarea name=""></textarea>
                     </p>
-                    <p><input type="submit" value="Enviar" class="send"/></p>
+                    <p><input type="submit" value="Enviar" className="send"/></p>
                 </form>
 
             </div>
@@ -31,7 +32,7 @@ const ContactoPage = (props) =>{
                 </ul>
 
             </div>
-        </div>
+        </main>
         )
 }
 export default ContactoPage
