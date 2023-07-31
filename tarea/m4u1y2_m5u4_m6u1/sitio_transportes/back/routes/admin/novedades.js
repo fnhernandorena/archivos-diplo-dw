@@ -16,6 +16,7 @@ router.post('/new', async (req, res, next) =>{
   try {
     if(req.body.titulo !='' && req.body.subtitulo !='' && req.body.cuerpo !=''){
       await novedadesmodels.insertNovedad(req.body);
+      res.redirect('/admin/novedades');
     } else {
       res.render ('admin/new',{layout: 'admin/layout' , error: true, message: 'Todos los campos son requeridos' })}}
      catch (error) {
