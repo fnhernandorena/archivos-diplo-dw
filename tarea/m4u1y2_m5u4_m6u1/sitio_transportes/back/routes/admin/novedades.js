@@ -12,6 +12,7 @@ router.get('/new', (req, res, next)=>{
     layout: 'admin/layout'});
 });
 
+/* new */
 router.post('/new', async (req, res, next) =>{
   try {
     if(req.body.titulo !='' && req.body.subtitulo !='' && req.body.cuerpo !=''){
@@ -23,6 +24,44 @@ router.post('/new', async (req, res, next) =>{
       console.log(error)
     res.render('admin/new', {layout: 'admin/layout', error: true, message :'No se cargo la novedad' })
     } })
+/* delete */
 
+router.get('/eliminar/:id', async (req, res, next) => {
+  var id = req.params.id;
+  await novedadesmodels.deleteNovedadById(id);
+  res.redirect('/admin/novedades');
+}
+)
+/* editar */
+    router.get('/editar/:id', async (req, res, next) => {
+      var id = req.params.id;
+      console.log(req.params.id);
+      var novedad = await novedadesmodels.getNovedadById(id);
 
-module.exports = router;
+      console.log(req.params.id);
+      res.render('admin/editar', { layout: 'admin/layout', novedad})
+    });
+
+   router.post('/editar', async (req, res, next) =>{
+    try{
+      var obj = {
+        titulo: req.body.titulo,
+        subtitulo: req.body.subtitulo,
+        cuerpo: req.body.cuerpo
+      }
+    
+      await novedadesmodels.editarNovedadById(obj, req.body.id);
+      res.redirect('/admin/novedades');
+    }
+    catch (error) {
+      console.log(error)
+      res.render('admin/editar', {
+        layout: 'admin/layout',
+        error: true,
+        message: 'No se modifico la novedad'
+      })
+    }
+   }
+   )
+
+    module.exports = router;
