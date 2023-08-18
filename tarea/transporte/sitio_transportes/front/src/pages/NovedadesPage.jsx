@@ -1,55 +1,33 @@
 import '../styles/components/pages/NovedadesPage.css'
-const NovedadesPage = (props) =>{
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/novedades/novedadesitem'
+const NovedadesPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+        cargarNovedades();
+    }, []);
     return (
         <main>
             <h2>Novedades</h2>
-            <div className='novstit'>
-                <div className='novedad'>
-                    <h3>Titulo</h3>
-                    <h4>Subtitulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
-                        vitae
-                        maiores
-                        libero laboriosam voluptatum eos magni cumque delectus repellat suscipit, asperiores unde
-                        assumenda
-                        nesciunt
-                        dolorem? Inventore?</p>
-                </div>
-                <div className='novedad'>
-                    <h3>Titulo</h3>
-                    <h4>Subtitulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
-                        vitae
-                        maiores
-                        libero laboriosam voluptatum eos magni cumque delectus repellat suscipit, asperiores unde
-                        assumenda
-                        nesciunt
-                        dolorem? Inventore?</p>
-                </div>
-                <div className='novedad'>
-                    <h3>Titulo</h3>
-                    <h4>Subtitulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
-                        vitae
-                        maiores
-                        libero laboriosam voluptatum eos magni cumque delectus repellat suscipit, asperiores unde
-                        assumenda
-                        nesciunt
-                        dolorem? Inventore?</p>
-                </div>
-                <div className='novedad'>
-                    <h3>Titulo</h3>
-                    <h4>Subtitulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus optio quidem minima
-                        vitae
-                        maiores
-                        libero laboriosam voluptatum eos magni cumque delectus repellat suscipit, asperiores unde
-                        assumenda
-                        nesciunt
-                        dolorem? Inventore?</p>
-                </div>
-            </div>
+            {
+                loading ? (
+                    <p>Cargando...</p>
+                ) : (
+                    novedades.map(item => <NovedadItem key={item.id}
+                        title={item.titulo} subtitle={item.subtitulo}
+                        imagen={item.imagen} body={item.cuerpo} />)
+                )
+            }
         </main>
-        )
-}
-export default NovedadesPage
+    )
+};
+export default NovedadesPage; 
