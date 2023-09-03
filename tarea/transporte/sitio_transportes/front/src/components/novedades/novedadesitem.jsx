@@ -5,7 +5,7 @@ const NovedadItem = (props) => {
 
     return (
         <div className='novedades'>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <h4>{subtitle}</h4>
             <img src={imagen} />
             <div dangerouslySetInnerHTML={{__html:
